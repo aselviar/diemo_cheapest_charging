@@ -18,3 +18,16 @@ Data:
 - Get information from Ich-tanke-strom.ch
 - Get information from EMP/CPO websites (evpass, MOVE, Plug'n'Roll, swisscharge, etc.)
 - Statistical and availability information available in .json format: https://opendata.swiss/dataset/ladestationen-fuer-elektroautos.
+
+EMPs:
+- evpass
+- MOVE
+- Swisscharge
+- Plug'n'Roll
+- Plugsurfing
+- NewMotion
+- Bosch Charge my EV
+- BMW ChargeNow (BMW Charging, MINI Charging)
+- Volkswagen Charge&Fuel Card
+- Renault Z.E. Pass
+- EnBW mobility+ App
