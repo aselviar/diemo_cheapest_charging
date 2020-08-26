@@ -38,7 +38,79 @@ The static data of ich-tanke-strom.ch is found here: https://opendata.swiss/de/d
 
 This json contains static information (location, operator name, unique charging station id etc.) for all the public charging stations in Switzerland (listed in ich-tanke-strom.ch). 
 
+```json
+       {
+          "Address": {
+            "City": "8008 Zürich",
+            "Country": "CHE",
+            "HouseNum": null,
+            "PostalCode": null,
+            "Street": "Lengghalde 2",
+            "Floor": null,
+            "Region": null,
+            "Timezone": null
+          },
+          "IsOpen24Hours": true,
+          "ChargingStationId": "CH*SWIEE9973",
+          "GeoCoordinates": {
+            "Google": "8.573595,47.351939"
+          },
+          "lastUpdate": null,
+          "HotlinePhoneNum": "0488848044",
+          "ClearinghouseID": null,
+          "OpeningTimes": null,
+          "GeoChargingPointEntrance": {
+            "Google": "None,None"
+          },
+          "ChargingStationName": "CH*SWIEE9973",
+          "EnChargingStationName": null,
+          "HubOperatorID": null,
+          "Plugs": [
+            "Type 2 Outlet"
+          ],
+          "Accessibility": "Unspecified",
+          "EvseID": "CH*SWIEE9974",
+          "DynamicInfoAvailable": "true",
+          "ChargingFacilities": [
+            {
+              "power": "22"
+            }
+          ],
+          "IsHubjectCompatible": true,
+          "ChargingModes": [
+            "Mode_3"
+          ],
+          "MaxCapacity": 22,
+          "PaymentOptions": null,
+          "AdditionalInfo": null,
+          "ChargingPoolID": null,
+          "deltaType": "update",
+          "ValueAddedServices": [
+            "Reservation"
+          ],
+          "AuthenticationModes": [
+            "NFC RFID Classic",
+            "Direct Payment",
+            "REMOTE"
+          ]
+        }
+      ],
+      "OperatorID": "CH*SWISSCHARGE",
+      "OperatorName": "Swisscharge"
+    }
+```
 
+In the example above you see a charging station from the operator swisscharge. This charging station has a unique ChargingStationId. The location of the charging station is also depicted.
 
+The price information and the location of all charging stations that are accesible to swisscharge customers can be found on the website of swisscharge https://map.swisscharge.ch/. If you choose a charging station and click on "charge now" (bottom left corner of the screen), you get the price information. 
 
+The idea of the challenge is to find a way to find the prices for each unique id. That means the programm should be able to locate the charging station with the unique id on the map of the operator and the price information has to be acquired automatically. This could be done for example via web scrapping or web crawling. 
 
+The same applies for all the operators. 
+
+## Ultimate goal
+
+The ultimate goal is to have a list of the prices of each operator or service provider on a certain charging station. This is useful for two reasons:
+
+- Enabling subscribers of certain service providers to choose the cheapeast charging option within a certain km range
+- Achieving price transparency and thus helping to prevent market inefficiencies and costly and strange charging policies that rely on the current price intransparency.
