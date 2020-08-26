@@ -31,3 +31,14 @@ EMPs:
 - Volkswagen Charge&Fuel Card
 - Renault Z.E. Pass
 - EnBW mobility+ App
+
+## Where can you find the data?
+
+The static data of ich-tanke-strom.ch is found here: https://opendata.swiss/de/dataset/ladestationen-fuer-elektroautos/resource/e33957be-180a-422b-90a5-fbfe9774927a
+
+This json contains static information (location, operator name, unique charging station id etc.) for all the public charging stations in Switzerland (listed in ich-tanke-strom.ch). 
+
+
+
+
+
