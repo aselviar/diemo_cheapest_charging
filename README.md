@@ -16,13 +16,13 @@ Big differences in EMP prices exist at certain charging stations. This solution 
 Data:
 
 - Get information from Ich-tanke-strom.ch
-- Get information from EMP/CPO websites (evpass, MOVE, Plug'n'Roll, swisscharge, etc.)
+- Get information from EMP/CPO websites (see list below)
 - Statistical and availability information available in .json format: https://opendata.swiss/dataset/ladestationen-fuer-elektroautos.
 
 EMPs:
 - evpass
 - MOVE
-- Swisscharge
+- Swisscharge: https://map.swisscharge.ch/
 - Plug'n'Roll
 - Plugsurfing
 - NewMotion
@@ -104,13 +104,13 @@ In the example above you see a charging station from the operator swisscharge. T
 
 The price information and the location of all charging stations that are accesible to swisscharge customers can be found on the website of swisscharge https://map.swisscharge.ch/. If you choose a charging station and click on "charge now" (bottom left corner of the screen), you get the price information. 
 
-The idea of the challenge is to find a way to find the prices for each unique id. That means the programm should be able to locate the charging station with the unique id on the map of the operator and the price information has to be acquired automatically. This could be done for example via web scrapping or web crawling. 
+The idea of the challenge is to find a way to find the prices for each unique id, depending on the EMP subscription. That means the programm should be able to locate the charging station with the unique id on the map and the price information has to be acquired automatically from the EMPs' website. This could be done for example via web scrapping or web crawling. 
 
-The same applies for all the operators. 
+The same applies for all the EMPs. 
 
 ## Ultimate goal
 
-The ultimate goal is to have a list of the prices of each operator or service provider on a certain charging station. This is useful for two reasons:
+The ultimate goal is to have a list of the prices of each service provider for each charging station. This is useful for two reasons:
 
 - Enabling subscribers of certain service providers to choose the cheapeast charging option within a certain km range
 - Achieving price transparency and thus helping to prevent market inefficiencies and costly and strange charging policies that rely on the current price intransparency.
